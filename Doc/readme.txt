@@ -15,6 +15,7 @@
 
     <log4net>
     <appender name="DefaultRollingLogFileAppender" type="log4net.Appender.RollingFileAppender">
+      <lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
       <param name="File" value="log\defaultlog_file.txt"/>
       <param name="AppendToFile" value="true"/>
       <param name="MaxSizeRollBackups" value="3"/>
@@ -27,6 +28,7 @@
     </appender>
 
     <appender name="TestRollingLogFileAppender" type="log4net.Appender.RollingFileAppender">
+      <lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
       <param name="File" value="log\testlog_file.txt"/>
       <param name="AppendToFile" value="true"/>
       <param name="MaxSizeRollBackups" value="3"/>
